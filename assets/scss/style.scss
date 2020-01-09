@@ -1,4 +1,5 @@
 $font-main-color: #fff;
+$font-logo-type: "Rock Salt", cursive;
 
 body {
   color: $font-main-color;
@@ -19,5 +20,7 @@ body {
 }
 
 .logo {
-  margin-top: 25vh;
+  margin: 20vh 0 8vh 0;
+  font-family: $font-logo-type;
+  font-size: calc(35px + 2vw);
 }
