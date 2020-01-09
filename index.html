@@ -21,6 +21,12 @@
     />
     <!--CSS-->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!--jQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!--Animated background image-->
@@ -58,10 +64,13 @@
         </div>
       </header>
       <!--Main Content-->
-      <section id="main-content-section">
+      <section>
         <div class="container">
           <div class="row">
-            <div class="col d-flex justify-content-center flex-wrap">
+            <div
+              class="col d-flex justify-content-center flex-wrap"
+              id="main-content-section"
+            >
               <!--Navigation-->
               <button class="navBtn" id="aboutLanding">About</button>
               <button class="navBtn" id="projectsLanding">Projects</button>
@@ -95,5 +104,7 @@
         </div>
       </div>
     </footer>
+    <!--JavaScript-->
+    <script src="./assets/javascript/click-init.js"></script>
   </body>
 </html>

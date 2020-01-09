@@ -5,6 +5,7 @@ body {
   background-size: auto 100vh;
   background-repeat: no-repeat;
   background-position: left top;
+  background-color: black;
 }
 
 .outer-container {
@@ -25,6 +26,9 @@ body {
 
 #hamburger {
   display: none;
+  position: absolute;
+  right: 0px;
+  z-index: 2;
 }
 
 #hamburger-menu {
@@ -60,6 +64,8 @@ body {
   margin: 20vh 0 8vh 0;
   font-family: "Rock Salt", cursive;
   font-size: calc(35px + 2vw);
+  display: inline-block;
+  cursor: pointer;
 }
 
 footer {
