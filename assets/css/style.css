@@ -23,13 +23,16 @@ body {
      object-position: bottom;
 }
 
-.logo {
-  margin: 20vh 0 8vh 0;
-  font-family: "Rock Salt", cursive;
-  font-size: calc(35px + 2vw);
+#hamburger {
+  display: none;
 }
 
-.navBtn {
+#hamburger-menu {
+  display: none;
+}
+
+.navBtn,
+.menuBtn {
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   border-radius: 5px;
@@ -41,8 +44,22 @@ body {
   font-size: 20px;
 }
 
-.navBtn:hover {
+.navBtn:hover,
+.menuBtn:hover {
   background-color: rgba(255, 255, 255, 0.25);
+}
+
+.menuBtn {
+  margin: 8px;
+  padding: 5px 10px;
+  width: auto;
+  font-size: 16px;
+}
+
+.logo {
+  margin: 20vh 0 8vh 0;
+  font-family: "Rock Salt", cursive;
+  font-size: calc(35px + 2vw);
 }
 
 footer {

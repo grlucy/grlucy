@@ -25,13 +25,15 @@ body {
   object-position: bottom;
 }
 
-.logo {
-  margin: 20vh 0 8vh 0;
-  font-family: $font-logo-type;
-  font-size: calc(35px + 2vw);
+#hamburger {
+  display: none;
+}
+#hamburger-menu {
+  display: none;
 }
 
-.navBtn {
+.navBtn,
+.menuBtn {
   background-color: transparentize($color: #fff, $amount: 0.9);
   border: none;
   border-radius: 5px;
@@ -42,8 +44,21 @@ body {
   font-family: $font-main-type;
   font-size: 20px;
 }
-.navBtn:hover {
+.navBtn:hover,
+.menuBtn:hover {
   background-color: transparentize($color: #fff, $amount: 0.75);
+}
+.menuBtn {
+  margin: 8px;
+  padding: 5px 10px;
+  width: auto;
+  font-size: 16px;
+}
+
+.logo {
+  margin: 20vh 0 8vh 0;
+  font-family: $font-logo-type;
+  font-size: calc(35px + 2vw);
 }
 
 footer {
