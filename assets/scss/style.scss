@@ -1,5 +1,23 @@
-$font-blue: rgb(46, 77, 133);
+$font-main-color: #fff;
 
 body {
-  color: $font-blue;
+  color: $font-main-color;
+  background-image: url("../images/darkTextureBG.jpg");
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+#animatedBG {
+  position: absolute;
+  bottom: 15vh;
+  z-index: -1;
+  height: 90vh;
+  width: 100vw;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.logo {
+  margin-top: 25vh;
 }
