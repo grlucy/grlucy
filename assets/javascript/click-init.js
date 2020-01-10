@@ -27,12 +27,11 @@ function hideLanding() {
 
 function aboutClick() {
   mainContent.empty();
-  setTimeout(function() {
-    mainContent.append($(aboutContent));
-  }, 600);
+  mainContent.append($(aboutContent));
 }
 function projectsClick() {
-  //
+  mainContent.empty();
+  mainContent.append($(projectsContent));
 }
 function contactClick() {
   //
@@ -40,21 +39,33 @@ function contactClick() {
 
 // CLICK EVENTS -------------------
 
+// Landing Page Buttons
 aboutLandingBtn.on("click", function() {
   hideLanding();
-  aboutClick();
+  setTimeout(function() {
+    aboutClick();
+  }, 600);
 });
 projectsLandingBtn.on("click", function() {
   hideLanding();
-  projectsClick();
+  setTimeout(function() {
+    projectsClick();
+  }, 600);
 });
 contactLandingBtn.on("click", function() {
   hideLanding();
   contactClick();
 });
 
+// Hamburger Menu
 hamburgerIcon.on("click", function() {
   hamburgerMenu.toggle();
+});
+aboutHamburgerBtn.on("click", function() {
+  aboutClick();
+});
+projectsHamburgerBtn.on("click", function() {
+  projectsClick();
 });
 
 logo.on("click", function() {

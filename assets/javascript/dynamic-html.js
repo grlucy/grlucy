@@ -1,9 +1,11 @@
+// LANDING PAGE ----------------------------
 const landingContent = `
 <button class="navBtn" id="aboutLanding">About</button>
 <button class="navBtn" id="projectsLanding">Projects</button>
 <button class="navBtn" id="contactLanding">Contact</button>
 `;
 
+// ABOUT SECTION ----------------------------
 const resumeLink = `./assets/resume/GinaLucyResume.pdf`;
 const aboutContent = `
 <div class="row">
@@ -15,16 +17,8 @@ const aboutContent = `
    />
  </div>
  <div class="col-md-9 about-col">
-   <p class="d-flex flex-wrap variable-justify">
-     <span class="about-details">(757) 652-3703</span>
-     <span class="about-details"
-       ><a href="mailto:ginalucy9@gmail.com"
-         >ginalucy9@gmail.com</a
-       ></span
-     >
-     <span class="about-details"
-       ><a href="${resumeLink}" target="_blank">Download my resume</a></span
-     >
+   <p>
+     <a href="${resumeLink}" target="_blank">Download my resume</a>
    </p>
    <p>
      I am currently a student at the University of Richmond
@@ -51,6 +45,99 @@ const aboutContent = `
 </div>
 `;
 
-const projectsContent = ``;
+// PROJECTS SECTION ----------------------------
+const projectsContent = `
+<div class="col-md-4 text-center">
+  <h3>PetSpiration</h3>
+  <img
+    src="./assets/images/PetSpiration-Screenshot.PNG"
+    alt="PetSpiration Screenshot"
+    class="project-img"
+  />
+  <p>
+    <a
+      href="https://grlucy.github.io/pet-spiration/"
+      target="_blank"
+      >View Deployed Site</a
+    ><br />
+    <a
+      href="https://github.com/grlucy/pet-spiration"
+      target="_blank"
+      >View GitHub Repository</a
+    >
+  </p>
+  <p>
+    Technologies used:
+    <span class="tech-border"
+      >HTML, CSS, Bootstrap, JavaScript, jQuery, Hammer.js,
+      Petfinder API, Google Maps API, GeolocationAPI, Font Awesome
+      Icons, Google Fonts</span
+    >
+  </p>
+  <p class="project-desc">
+    A responsive application that helps users decide what type of
+    pet they want, matches users with available shelter animals,
+    and then provides directions to the animal shelter.
+  </p>
+</div>
+<div class="col-md-4 text-center">
+  <h3>Code Quiz</h3>
+  <img
+    src="./assets/images/CodeQuiz-Screenshot.PNG"
+    alt="Code Quiz Screenshot"
+    class="project-img"
+  />
+  <p>
+    <a href="https://grlucy.github.io/Code-Quiz/" target="_blank"
+      >View Deployed Site</a
+    ><br />
+    <a href="https://github.com/grlucy/Code-Quiz" target="_blank"
+      >View GitHub Repository</a
+    >
+  </p>
+  <p>
+    Technologies used:
+    <span class="tech-border"
+      >HTML, CSS, JavaScript, Google Fonts</span
+    >
+  </p>
+  <p class="project-desc">
+    A responsive, timer-based quiz application that stores high
+    scores client-side.
+  </p>
+</div>
+<div class="col-md-4 text-center">
+  <h3>Weather Dashboard</h3>
+  <img
+    src="./assets/images/WeatherDashboard-Screenshot.PNG"
+    alt="Weather Dashboard Screenshot"
+    class="project-img"
+  />
+  <p>
+    <a
+      href="https://grlucy.github.io/Weather-Dashboard/"
+      target="_blank"
+      >View Deployed Site</a
+    ><br />
+    <a
+      href="https://github.com/grlucy/Weather-Dashboard"
+      target="_blank"
+      >View GitHub Repository</a
+    >
+  </p>
+  <p>
+    Technologies used:
+    <span class="tech-border"
+      >HTML, CSS, Bootstrap, JavaScript, jQuery, Moment.js,
+      OpenWeather API, Geolocation API</span
+    >
+  </p>
+  <p>
+    A responsive weather dashboard that utilizes geolocation and
+    the OpenWeather API.
+  </p>
+</div>
+`;
 
+// CONTACT SECTION ----------------------------
 const contactContent = ``;
