@@ -1,4 +1,4 @@
-// Variables
+// VARIABLES -------------------
 
 // Navigation Buttons
 const aboutLandingBtn = $("#aboutLanding");
@@ -17,39 +17,46 @@ const animatedBG = $("#animatedBG");
 const mainContent = $("#main-content-section");
 const logo = $(".logo");
 
-// Functions
+// FUNCTIONS -------------------
+
+function hideLanding() {
+  hamburgerIcon.show();
+  mainContent.empty();
+  animatedBG.animate({ bottom: "100vh" }, "slow");
+}
 
 function aboutClick() {
-  hamburgerIcon.show();
   mainContent.empty();
-  animatedBG.animate({ bottom: "100vh" });
+  setTimeout(function() {
+    mainContent.append($(aboutContent));
+  }, 600);
 }
 function projectsClick() {
-  hamburgerIcon.show();
-  mainContent.empty();
-  animatedBG.animate({ bottom: "100vh" });
+  //
 }
 function contactClick() {
-  hamburgerIcon.show();
-  mainContent.empty();
-  animatedBG.animate({ bottom: "100vh" });
+  //
 }
 
-// Click Events
+// CLICK EVENTS -------------------
 
 aboutLandingBtn.on("click", function() {
+  hideLanding();
   aboutClick();
 });
 projectsLandingBtn.on("click", function() {
+  hideLanding();
   projectsClick();
 });
 contactLandingBtn.on("click", function() {
+  hideLanding();
   contactClick();
 });
 
 hamburgerIcon.on("click", function() {
   hamburgerMenu.toggle();
 });
+
 logo.on("click", function() {
   location.reload();
 });

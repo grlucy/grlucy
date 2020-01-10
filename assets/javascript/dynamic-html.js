@@ -4,7 +4,7 @@ const landingContent = `
 <button class="navBtn" id="contactLanding">Contact</button>
 `;
 
-const resumeLink = `../resume/GinaLucyResume.pdf`;
+const resumeLink = `./assets/resume/GinaLucyResume.pdf`;
 const aboutContent = `
 <div class="row">
  <div class="col-md-3 about-col">
