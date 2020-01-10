@@ -32,11 +32,10 @@ p {
   bottom: 15vh;
   z-index: -1;
   height: 90vh;
-  width: 100vw;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
+  width: 100%;
+  background-image: url("../images/animatedBG.png");
+  background-size: cover;
+  background-position: bottom;
 }
 
 #hamburger {
@@ -149,7 +148,22 @@ h3 {
   margin: 8px 0 18px;
 }
 
+@media only screen and (max-width: 1920px) {
+  body {
+    background-image: url("../images/darkTextureBG-1920.jpg");
+  }
+  #animatedBG {
+    background-image: url("../images/animatedBG-1920.png");
+  }
+}
+
 @media only screen and (max-width: 767px) {
+  body {
+    background-image: url("../images/darkTextureBG-767.jpg");
+  }
+  #animatedBG {
+    background-image: url("../images/animatedBG-767.png");
+  }
   .about-col {
     text-align: center;
     padding: 0 45px;
