@@ -20,6 +20,7 @@ const logo = $(".logo");
 
 // FUNCTIONS -------------------
 
+// Landing page hide/show functions
 function hideLanding() {
   hamburgerIcon.show();
   landingNav.hide();
@@ -35,6 +36,7 @@ function showLanding() {
   }, 600);
 }
 
+// Re-usable navigation functions
 function aboutClick() {
   mainContent.empty();
   mainContent.append($(aboutContent));
@@ -84,6 +86,7 @@ contactHamburgerBtn.on("click", function() {
   contactClick();
 });
 
+// Logo
 logo.on("click", function() {
   showLanding();
 });
