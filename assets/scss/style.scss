@@ -1,6 +1,8 @@
 $font-main-color: #fff;
 $font-main-type: "Comfortaa", sans-serif;
 $font-logo-type: "Rock Salt", cursive;
+$font-link-color: rgb(240, 187, 12);
+$font-link-hover-color: rgb(255, 212, 121);
 
 body {
   color: $font-main-color;
@@ -9,11 +11,21 @@ body {
   background-size: auto 100vh;
   background-repeat: no-repeat;
   background-position: left top;
+  background-attachment: fixed;
   background-color: black;
 }
 
+a,
+a:visited {
+  color: $font-link-color;
+}
+a:active,
+a:hover {
+  color: $font-link-hover-color;
+}
+
 .outer-container {
-  min-height: calc(100vh - 115px);
+  min-height: calc(100vh - 120px);
 }
 
 #animatedBG {
@@ -68,7 +80,7 @@ body {
 }
 
 footer {
-  margin: 60px 0 0;
+  margin: 40px 0 35px;
 
   p {
     margin: 0;
@@ -89,3 +101,41 @@ footer {
     }
   }
 }
+
+// ABOUT SECTION
+//---------------------
+
+#headshot {
+  width: 100%;
+  max-width: 264px;
+  border-radius: 5px;
+  margin-bottom: 27px;
+}
+
+.variable-justify {
+  justify-content: flex-start;
+}
+
+.about-details {
+  margin: 0 30px 0 0;
+}
+
+//---------------------
+
+// MEDIA QUERIES
+//---------------------
+
+@media only screen and (max-width: 767px) {
+  .about-col {
+    text-align: center;
+    padding: 0 45px;
+  }
+  .variable-justify {
+    justify-content: center;
+  }
+  .about-details {
+    margin: 0 15px;
+  }
+}
+
+//---------------------
