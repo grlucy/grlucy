@@ -4,6 +4,7 @@ const landingContent = `
 <button class="navBtn" id="contactLanding">Contact</button>
 `;
 
+const resumeLink = `../resume/GinaLucyResume.pdf`;
 const aboutContent = `
 <div class="row">
  <div class="col-md-3 about-col">
@@ -22,7 +23,7 @@ const aboutContent = `
        ></span
      >
      <span class="about-details"
-       ><a href="#" target="_blank">Download my resume</a></span
+       ><a href="${resumeLink}" target="_blank">Download my resume</a></span
      >
    </p>
    <p>
