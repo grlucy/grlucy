@@ -28,8 +28,8 @@ const aboutContent = `
      the marketing field from 2011 to 2019 at companies including
      CBRE, Virginia Beach Community Development Corporation, and
      Old Dominion University. I also managed my own freelance
-     business, providing services in photography, graphic design,
-     and web design.
+     business, providing services in web design, graphic design, 
+     and photography.
    </p>
    <p>
      Raised in Virginia Beach, I lived in Williamsburg, Norfolk,
@@ -140,4 +140,14 @@ const projectsContent = `
 `;
 
 // CONTACT SECTION ----------------------------
-const contactContent = ``;
+const contactContent = `
+<div class="col text-center">
+  <h3>Call:</h3>
+  <p>+1 757 652 3703</p>
+  <br />
+  <h3>Email:</h3>
+  <p>
+    <a href="mailto:ginalucy9@gmail.com">ginalucy9@gmail.com</a>
+  </p>
+</div>
+`;

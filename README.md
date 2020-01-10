@@ -4,7 +4,7 @@ Deployed on Github Pages at [https://grlucy.github.io/grlucy/](https://grlucy.gi
 
 ## Technologies Used
 
-Adobe Photoshop, HTML, CSS, Sass, Bootstrap, Google Fonts, Font Awesome Icons, JavaScript, jQuery
+HTML, CSS, Sass, Bootstrap, Google Fonts, Font Awesome Icons, JavaScript, jQuery
 
 ## Credits
 

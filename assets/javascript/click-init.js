@@ -34,7 +34,8 @@ function projectsClick() {
   mainContent.append($(projectsContent));
 }
 function contactClick() {
-  //
+  mainContent.empty();
+  mainContent.append($(contactContent));
 }
 
 // CLICK EVENTS -------------------
@@ -54,7 +55,9 @@ projectsLandingBtn.on("click", function() {
 });
 contactLandingBtn.on("click", function() {
   hideLanding();
-  contactClick();
+  setTimeout(function() {
+    contactClick();
+  }, 600);
 });
 
 // Hamburger Menu
@@ -66,6 +69,9 @@ aboutHamburgerBtn.on("click", function() {
 });
 projectsHamburgerBtn.on("click", function() {
   projectsClick();
+});
+contactHamburgerBtn.on("click", function() {
+  contactClick();
 });
 
 logo.on("click", function() {
