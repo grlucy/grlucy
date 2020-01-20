@@ -42,11 +42,11 @@ const aboutContent = `
 const projectsContent = `
 <div class="col-md-4 text-center">
   <h3>PetSpiration</h3>
-  <img
-    src="./assets/images/PetSpiration-Screenshot.PNG"
+  <a href="./assets/images/PetSpiration-demo.gif" target="_blank"><img
+    src="./assets/images/PetSpiration-demo.gif"
     alt="PetSpiration Screenshot"
     class="project-img"
-  />
+  /></a>
   <p>
     <a
       href="https://grlucy.github.io/pet-spiration/"
@@ -75,11 +75,11 @@ const projectsContent = `
 </div>
 <div class="col-md-4 text-center">
   <h3>Code Quiz</h3>
-  <img
-    src="./assets/images/CodeQuiz-Screenshot.PNG"
+  <a href="./assets/images/Code-Quiz-demo.gif" target="_blank"><img
+    src="./assets/images/Code-Quiz-demo.gif"
     alt="Code Quiz Screenshot"
     class="project-img"
-  />
+  /></a>
   <p>
     <a href="https://grlucy.github.io/Code-Quiz/" target="_blank"
       >View Deployed Site</a
@@ -101,11 +101,11 @@ const projectsContent = `
 </div>
 <div class="col-md-4 text-center">
   <h3>Weather Dashboard</h3>
-  <img
-    src="./assets/images/WeatherDashboard-Screenshot.PNG"
+  <a href="./assets/images/Weather-Dashboard-demo.gif" target="_blank"><img
+    src="./assets/images/Weather-Dashboard-demo.gif"
     alt="Weather Dashboard Screenshot"
     class="project-img"
-  />
+  /></a>
   <p>
     <a
       href="https://grlucy.github.io/Weather-Dashboard/"
