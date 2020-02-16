@@ -40,95 +40,177 @@ const aboutContent = `
 
 // PROJECTS SECTION ----------------------------
 const projectsContent = `
-<div class="col-md-4 text-center">
-  <h3>PetSpiration</h3>
-  <a href="./assets/images/PetSpiration-demo.gif" target="_blank"><img
-    src="./assets/images/PetSpiration-demo.gif"
-    alt="PetSpiration Screenshot"
-    class="project-img"
-  /></a>
-  <p>
-    <a
-      href="https://grlucy.github.io/pet-spiration/"
-      target="_blank"
-      >View Deployed Site</a
-    ><br />
-    <a
-      href="https://github.com/grlucy/pet-spiration"
-      target="_blank"
-      >View GitHub Repository</a
-    >
-  </p>
-  <p>
-    Technologies used:
-    <span class="tech-border"
-      >HTML, CSS, Bootstrap, JavaScript, jQuery, Hammer.js,
-      Petfinder API, Google Maps API, GeolocationAPI, Font Awesome
-      Icons, Google Fonts</span
-    >
-  </p>
-  <p class="project-desc">
-    A responsive application that helps users decide what type of
-    pet they want, matches users with available shelter animals,
-    and then provides directions to the animal shelter.
-  </p>
+<div class="row">
+  <div class="col-md-12 text-center">
+    <h3>Burger Logger</h3>
+  </div>
 </div>
-<div class="col-md-4 text-center">
-  <h3>Code Quiz</h3>
-  <a href="./assets/images/Code-Quiz-demo.gif" target="_blank"><img
-    src="./assets/images/Code-Quiz-demo.gif"
-    alt="Code Quiz Screenshot"
-    class="project-img"
-  /></a>
-  <p>
-    <a href="https://grlucy.github.io/Code-Quiz/" target="_blank"
-      >View Deployed Site</a
-    ><br />
-    <a href="https://github.com/grlucy/Code-Quiz" target="_blank"
-      >View GitHub Repository</a
-    >
-  </p>
-  <p>
-    Technologies used:
-    <span class="tech-border"
-      >HTML, CSS, JavaScript, Google Fonts</span
-    >
-  </p>
-  <p class="project-desc">
-    A responsive, timer-based quiz application that stores high
-    scores client-side.
-  </p>
+<div class="row">
+  <div class="col-md-5 text-center">
+    <a
+      href="./assets/images/Burger-Logger-demo.gif"
+      target="_blank"
+      ><img
+        src="./assets/images/Burger-Logger-demo.gif"
+        alt="Burger Logger Screenshot"
+        class="project-img"
+    /></a>
+  </div>
+  <div class="col-md-7 text-center">
+    <p>
+      <a
+        href="https://vast-refuge-81428.herokuapp.com"
+        target="_blank"
+        >View Deployed Site</a
+      ><br />
+      <a
+        href="https://github.com/grlucy/Burger-Logger"
+        target="_blank"
+        >View GitHub Repository</a
+      >
+    </p>
+    <p>
+      Technologies used:
+      <span class="tech-border"
+        >MySQL, Handlebars, Express, Node.js, JavaScript, jQuery,
+        CSS, Bootstrap, HTML, Font Awesome Icons, Google
+        Fonts</span
+      >
+    </p>
+    <p class="project-desc">
+      A responsive, RESTful Node.js/Express app using MySQL as a
+      database and Handlebars to serve HTML that enables users to
+      read, create, and update data about burgers.
+    </p>
+  </div>
 </div>
-<div class="col-md-4 text-center">
-  <h3>Weather Dashboard</h3>
-  <a href="./assets/images/Weather-Dashboard-demo.gif" target="_blank"><img
-    src="./assets/images/Weather-Dashboard-demo.gif"
-    alt="Weather Dashboard Screenshot"
-    class="project-img"
-  /></a>
-  <p>
+
+<div class="row">
+  <div class="col-md-12 text-center">
+    <h3>PetSpiration</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-5 text-center">
     <a
-      href="https://grlucy.github.io/Weather-Dashboard/"
+      href="./assets/images/PetSpiration-demo.gif"
       target="_blank"
-      >View Deployed Site</a
-    ><br />
+      ><img
+        src="./assets/images/PetSpiration-demo.gif"
+        alt="PetSpiration Screenshot"
+        class="project-img"
+    /></a>
+  </div>
+  <div class="col-md-7 text-center">
+    <p>
+      <a
+        href="https://grlucy.github.io/pet-spiration/"
+        target="_blank"
+        >View Deployed Site</a
+      ><br />
+      <a
+        href="https://github.com/grlucy/pet-spiration"
+        target="_blank"
+        >View GitHub Repository</a
+      >
+    </p>
+    <p>
+      Technologies used:
+      <span class="tech-border"
+        >HTML, CSS, Bootstrap, JavaScript, jQuery, Hammer.js,
+        Petfinder API, Google Maps API, GeolocationAPI, Font
+        Awesome Icons, Google Fonts</span
+      >
+    </p>
+    <p class="project-desc">
+      A responsive application that helps users decide what type
+      of pet they want, matches users with available shelter
+      animals, and then provides directions to the animal shelter.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12 text-center">
+    <h3>Code Quiz</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-5 text-center">
+    <a href="./assets/images/Code-Quiz-demo.gif" target="_blank"
+      ><img
+        src="./assets/images/Code-Quiz-demo.gif"
+        alt="Code Quiz Screenshot"
+        class="project-img"
+    /></a>
+  </div>
+  <div class="col-md-7 text-center">
+    <p>
+      <a
+        href="https://grlucy.github.io/Code-Quiz/"
+        target="_blank"
+        >View Deployed Site</a
+      ><br />
+      <a
+        href="https://github.com/grlucy/Code-Quiz"
+        target="_blank"
+        >View GitHub Repository</a
+      >
+    </p>
+    <p>
+      Technologies used:
+      <span class="tech-border"
+        >HTML, CSS, JavaScript, Google Fonts</span
+      >
+    </p>
+    <p class="project-desc">
+      A responsive, timer-based quiz application that stores high
+      scores client-side.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12 text-center">
+    <h3>Weather Dashboard</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-5 text-center">
     <a
-      href="https://github.com/grlucy/Weather-Dashboard"
+      href="./assets/images/Weather-Dashboard-demo.gif"
       target="_blank"
-      >View GitHub Repository</a
-    >
-  </p>
-  <p>
-    Technologies used:
-    <span class="tech-border"
-      >HTML, CSS, Bootstrap, JavaScript, jQuery, Moment.js,
-      OpenWeather API, Geolocation API</span
-    >
-  </p>
-  <p>
-    A responsive weather dashboard that utilizes geolocation and
-    the OpenWeather API.
-  </p>
+      ><img
+        src="./assets/images/Weather-Dashboard-demo.gif"
+        alt="Weather Dashboard Screenshot"
+        class="project-img"
+    /></a>
+  </div>
+  <div class="col-md-7 text-center">
+    <p>
+      <a
+        href="https://grlucy.github.io/Weather-Dashboard/"
+        target="_blank"
+        >View Deployed Site</a
+      ><br />
+      <a
+        href="https://github.com/grlucy/Weather-Dashboard"
+        target="_blank"
+        >View GitHub Repository</a
+      >
+    </p>
+    <p>
+      Technologies used:
+      <span class="tech-border"
+        >HTML, CSS, Bootstrap, JavaScript, jQuery, Moment.js,
+        OpenWeather API, Geolocation API</span
+      >
+    </p>
+    <p>
+      A responsive weather dashboard that utilizes geolocation and
+      the OpenWeather API.
+    </p>
+  </div>
 </div>
 `;
 
