@@ -1,6 +1,6 @@
 # Professional Portfolio | Gina Lucy
 
-Deployed on GitHub Pages at [https://grlucy.github.io/grlucy/](https://grlucy.github.io/grlucy/)
+Deployed at [ginalucy.com](https://www.ginalucy.com)
 
 ## Description
 
