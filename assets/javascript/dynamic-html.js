@@ -33,6 +33,51 @@ const aboutContent = `
 const projectsContent = `
 <div class="row">
   <div class="col-md-12 text-center">
+    <h3>Friendango</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-5 text-center">
+    <a
+      href="./assets/images/Friendango-demo.gif"
+      target="_blank"
+      ><img
+        src="./assets/images/Friendango-demo.gif"
+        alt="Friendango Screenshot"
+        class="project-img"
+    /></a>
+  </div>
+  <div class="col-md-7 text-center">
+    <p>
+      <a
+        href="https://friendango.herokuapp.com"
+        target="_blank"
+        >View Deployed Site</a
+      ><br />
+      <a
+        href="https://github.com/grlucy/Friendango"
+        target="_blank"
+        >View GitHub Repository</a
+      >
+    </p>
+    <p>
+      Technologies used:
+      <span class="tech-border"
+        >
+        Node.js, Express, Express Handlebars, MySQL, Sequelize, 
+        JavaScript, jQuery, Heroku, JawsDB, OMDB API, HTML, CSS, 
+        Bootstrap, Chart.js, ESLint, Dotenv, Passport
+    </p>
+    <p class="project-desc">
+      A social network for movie reviews that enables a user to 
+      submit their own reviews and view data about the reviews 
+      submitted either by all users or by only the users they follow.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12 text-center">
     <h3>Burger Logger</h3>
   </div>
 </div>
@@ -50,7 +95,7 @@ const projectsContent = `
   <div class="col-md-7 text-center">
     <p>
       <a
-        href="https://vast-refuge-81428.herokuapp.com"
+        href="https://burger-logger-2020.herokuapp.com"
         target="_blank"
         >View Deployed Site</a
       ><br />
@@ -71,7 +116,7 @@ const projectsContent = `
     <p class="project-desc">
       A responsive, RESTful Node.js/Express app using MySQL as a
       database and Handlebars to serve HTML that enables users to
-      read, create, and update data about burgers.
+      read, create, update, and delete data about burgers.
     </p>
   </div>
 </div>
@@ -200,6 +245,47 @@ const projectsContent = `
     <p>
       A responsive weather dashboard that utilizes geolocation and
       the OpenWeather API.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12 text-center">
+    <h3>Password Generator</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-5 text-center">
+    <a
+      href="./assets/images/Password-Generator-demo.gif"
+      target="_blank"
+      ><img
+        src="./assets/images/Password-Generator-demo.gif"
+        alt="Password Generator Screenshot"
+        class="project-img"
+    /></a>
+  </div>
+  <div class="col-md-7 text-center">
+    <p>
+      <a
+        href="https://grlucy.github.io/Password-Generator/"
+        target="_blank"
+        >View Deployed Site</a
+      ><br />
+      <a
+        href="https://github.com/grlucy/Password-Generator"
+        target="_blank"
+        >View GitHub Repository</a
+      >
+    </p>
+    <p>
+      Technologies used:
+      <span class="tech-border"
+        >JavaScript, HTML, CSS, Bootstrap</span
+      >
+    </p>
+    <p>
+      A responsive application that generates a random password based on user-selected criteria.
     </p>
   </div>
 </div>
