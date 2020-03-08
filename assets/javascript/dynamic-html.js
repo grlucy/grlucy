@@ -14,25 +14,16 @@ const aboutContent = `
      <a href="${resumeLink}" target="_blank">Download my resume</a>
    </p>
    <p>
-     I am currently a student at the University of Richmond
-     studying full stack web development. Before returning to
-     university, I was a Senior Communications Specialist at
-     CBRE, a global commercial real estate leader. I worked in
-     the marketing field from 2011 to 2019 at companies including
-     CBRE, Virginia Beach Community Development Corporation, and
-     Old Dominion University. I also managed my own freelance
-     business, providing services in web design, graphic design, 
-     and photography.
+     Full stack web developer located in Richmond, Virginia.
    </p>
    <p>
-     Raised in Virginia Beach, I lived in Williamsburg, Norfolk,
-     and Baltimore before moving to Richmond in spring 2018. I
-     graduated with a B.S. Business Administration with a major
-     in marketing from Old Dominion University in 2012.
+     Experienced with Node.js, Express, Express Handlebars, Mongo, Mongoose, MySQL, Sequelize, JavaScript, jQuery, Moment.js, Chart.js, HTML, CSS, Sass, Bootstrap, Materialize, and IndexedDB.
    </p>
    <p>
-     When I'm not coding, I'm playing video games, dancing,
-     traveling, or lazing around with my two cats.
+     Earned a Certificate in Full Stack Web Development (MERN Stack) from the University of Richmond in 2020. Passionate about learning to use new technologies and new evolutions of existing technologies to create efficient and scalable code. Interested in shaping the future trends of how people interact with software.
+   </p>
+   <p>
+      Background in marketing and graphic design. Earned a B.S. Business Administration with a major in marketing from Old Dominion University. Skilled with the Adobe Creative Suite. Positioned well to translate client needs into a cohesive online brand identity.
    </p>
  </div>
 </div>
