@@ -89,6 +89,24 @@ section {
     opacity: 1;
   }
 }
+.projectLink {
+  a,
+  a:active,
+  a:hover,
+  a:visited {
+    text-decoration: none;
+    color: #212529;
+  }
+}
+.card-title {
+  margin-bottom: 0;
+}
+.staticGif {
+  position: absolute;
+}
+.staticGif:hover {
+  opacity: 0;
+}
 
 @media only screen and (max-width: 767px) {
   .sectionTitle {
