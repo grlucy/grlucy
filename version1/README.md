@@ -16,4 +16,4 @@ A mobile-first professional portfolio website that exhibits standouts from among
 
 ## Credits
 
--
+- "jeremy-bishop-rqWoB4LFgmc-unsplash.jpg" Photo by Jeremy Bishop on Unsplash
