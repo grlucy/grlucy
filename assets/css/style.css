@@ -69,7 +69,42 @@ section {
   padding: 40px 0;
 }
 
+.sectionTitle {
+  font-size: 2.2rem;
+  font-weight: bold;
+  position: relative;
+  right: 20px;
+  color: navy;
+}
+
 .darkSection {
   background-color: #e2e2e2;
+}
+
+.headshot {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.skillIcons {
+  font-size: 37px;
+}
+
+.skillIcons i {
+  margin: 0 6px;
+  opacity: 0.7;
+}
+
+.skillIcons i:hover {
+  color: navy;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .sectionTitle {
+    right: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

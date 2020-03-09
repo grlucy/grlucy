@@ -59,6 +59,39 @@ nav {
 section {
   padding: 40px 0;
 }
+.sectionTitle {
+  font-size: 2.2rem;
+  font-weight: bold;
+  position: relative;
+  right: 20px;
+  color: $color-main-accent;
+}
 .darkSection {
   background-color: $color-second-accent;
+}
+.headshot {
+  width: 100%;
+  max-width: 250px;
+  // border-radius: 0.25rem;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.skillIcons {
+  font-size: 37px;
+
+  i {
+    margin: 0 6px;
+    opacity: 0.7;
+  }
+
+  i:hover {
+    color: $color-main-accent;
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sectionTitle {
+    right: 0;
+  }
 }
