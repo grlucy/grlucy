@@ -1,0 +1,64 @@
+$color-main-accent: navy;
+$color-second-accent: rgb(226, 226, 226);
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #eee;
+}
+header {
+  background-color: $color-main-accent;
+  min-height: 30vh;
+}
+.iconStyle {
+  a,
+  a:active,
+  a:hover,
+  a:visited {
+    color: #fff;
+
+    img {
+      height: 25px;
+      margin-right: 20px;
+    }
+  }
+  a,
+  a:visited {
+    opacity: 0.6;
+  }
+  a:hover,
+  a:active {
+    opacity: 1;
+  }
+  p {
+    margin: 0;
+    font-size: 27px;
+    position: relative;
+    top: 7px;
+  }
+}
+nav {
+  background-color: $color-main-accent;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.sticky + #main-content {
+  padding-top: 56px;
+}
+#about,
+#projects,
+#contact {
+  position: relative;
+  top: -96px;
+}
+section {
+  padding: 40px 0;
+}
+.darkSection {
+  background-color: $color-second-accent;
+}

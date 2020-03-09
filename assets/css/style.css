@@ -1,0 +1,75 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eee;
+}
+
+header {
+  background-color: navy;
+  min-height: 30vh;
+}
+
+.iconStyle a,
+.iconStyle a:active,
+.iconStyle a:hover,
+.iconStyle a:visited {
+  color: #fff;
+}
+
+.iconStyle a img,
+.iconStyle a:active img,
+.iconStyle a:hover img,
+.iconStyle a:visited img {
+  height: 25px;
+  margin-right: 20px;
+}
+
+.iconStyle a,
+.iconStyle a:visited {
+  opacity: 0.6;
+}
+
+.iconStyle a:hover,
+.iconStyle a:active {
+  opacity: 1;
+}
+
+.iconStyle p {
+  margin: 0;
+  font-size: 27px;
+  position: relative;
+  top: 7px;
+}
+
+nav {
+  background-color: navy;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.sticky + #main-content {
+  padding-top: 56px;
+}
+
+#about,
+#projects,
+#contact {
+  position: relative;
+  top: -96px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+.darkSection {
+  background-color: #e2e2e2;
+}
+/*# sourceMappingURL=style.css.map */
