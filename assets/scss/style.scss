@@ -19,6 +19,10 @@ header {
   background-image: $gradient;
   min-height: 30vh;
 }
+.logo {
+  font-size: calc(30px + 1vw);
+  font-family: "Rock Salt", sans-serif;
+}
 .iconStyle {
   a,
   a:active,
