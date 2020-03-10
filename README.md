@@ -12,4 +12,4 @@ A mobile-first professional portfolio website that exhibits standouts from among
 
 ## UI
 
-![Landing Screen](/assets/screenshots/landing.PNG)
+![Portfolio Demo](/assets/screenshots/portfolio-demo.gif)
