@@ -1,5 +1,6 @@
 $color-main-accent: #0c36aa;
 $gradient: linear-gradient(45deg, #039cd5, #1545cb, #6c0cb4, #010520);
+$color-first-accent: #057fc5;
 $color-second-accent: rgb(226, 226, 226);
 
 html {
@@ -82,7 +83,6 @@ section {
 .headshot {
   width: 100%;
   max-width: 250px;
-  // border-radius: 0.25rem;
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -111,7 +111,8 @@ section {
 .staticGif:hover {
   opacity: 0;
 }
-.contactBtn {
+.contactBtn,
+.codeBtn {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -123,7 +124,6 @@ section {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: $color-main-accent;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
@@ -131,8 +131,20 @@ section {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+.contactBtn {
+  background-color: $color-main-accent;
+}
 .contactBtn:hover {
   background-color: darken($color-main-accent, 8%);
+}
+.codeBtn {
+  background-color: $color-first-accent;
+}
+.codeBtn:hover {
+  background-color: darken($color-first-accent, 8%);
+}
+.buttonLink a {
+  text-decoration: none;
 }
 footer {
   background-color: $color-main-accent;
@@ -142,6 +154,10 @@ footer {
   min-height: 50px;
   opacity: 0.75;
   font-size: 14px;
+}
+.demoGif {
+  width: 100%;
+  max-width: 500px;
 }
 
 @media only screen and (max-width: 767px) {
