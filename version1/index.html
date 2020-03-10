@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gina Lucy</title>
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa|Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/51e99565ca.js"></script>
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!--jQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Animated background image-->
+    <div id="animatedBG"></div>
+    <div class="outer-container">
+      <!--Nav Hamburger Menu (Toggle Visibility)-->
+      <div id="hamburger">
+        <nav
+          class="navbar navbar-dark d-flex justify-content-end align-items-center flex-wrap"
+        >
+          <div id="hamburger-menu">
+            <div
+              class="d-flex justify-content-end align-items-center flex-wrap"
+            >
+              <button class="menuBtn" id="aboutTop">About</button>
+              <button class="menuBtn" id="projectsTop">Projects</button>
+              <button class="menuBtn" id="contactTop">Contact</button>
+            </div>
+          </div>
+          <!--Hamburger Icon-->
+          <button class="navbar-toggler" id="hamburgerBtn" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+      <!--Header-->
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <!--Logo-->
+              <h1 class="logo">Gina Lucy</h1>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--Landing Page Navigation-->
+      <section id="landing-nav">
+        <div class="container">
+          <div class="row">
+            <div class="col d-flex justify-content-center flex-wrap">
+              <!--Navigation-->
+              <button class="navBtn aboutLanding">About</button>
+              <button class="navBtn projectsLanding">Projects</button>
+              <button class="navBtn contactLanding">Contact</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Main Content-->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col" id="main-content-section">
+              <!--mainContent will be dynamically generated here-->
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--Footer-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex justify-content-center align-items-baseline">
+            <!--Social links-->
+            <a href="https://www.linkedin.com/in/grlucy" target="_blank">
+              <img src="./assets/images/linkedin-32.png" alt="LinkedIn Icon" />
+            </a>
+            <a href="https://github.com/grlucy" target="_blank">
+              <img
+                src="./assets/images/GitHub-Mark-Light-32px.png"
+                alt="Github Icon"
+              />
+            </a>
+            <p>
+              <a href="mailto:ginalucy9@gmail.com">
+                <i class="far fa-envelope"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--JavaScript-->
+    <script src="./assets/javascript/dynamic-html.js"></script>
+    <script src="./assets/javascript/click-init.js"></script>
+  </body>
+</html>

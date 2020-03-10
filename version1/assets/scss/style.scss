@@ -1,0 +1,189 @@
+$font-main-color: #fff;
+$font-main-type: "Comfortaa", sans-serif;
+$font-logo-type: "Rock Salt", cursive;
+$font-link-color: rgb(240, 187, 12);
+$font-link-hover-color: rgb(255, 212, 121);
+$font-accent-color: rgb(240, 187, 12);
+
+body {
+  color: $font-main-color;
+  font-family: $font-main-type;
+  background-image: url("../images/darkTextureBG.jpg");
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
+  background-color: black;
+}
+
+a,
+a:visited {
+  color: $font-link-color;
+}
+a:active,
+a:hover {
+  color: $font-link-hover-color;
+}
+
+p {
+  font-size: 16px;
+}
+
+.outer-container {
+  min-height: calc(100vh - 120px);
+}
+
+#animatedBG {
+  position: absolute;
+  bottom: 15vh;
+  z-index: -1;
+  height: 90vh;
+  width: 100%;
+  background-image: url("../images/animatedBG.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+#hamburger {
+  display: none;
+  position: absolute;
+  right: 0px;
+  z-index: 2;
+}
+#hamburger-menu {
+  display: none;
+}
+
+.navBtn,
+.menuBtn {
+  background-color: transparentize($color: #fff, $amount: 0.9);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin: 0 16px 16px;
+  width: 230px;
+  color: $font-main-color;
+  font-family: $font-main-type;
+  font-size: 20px;
+}
+.navBtn:hover,
+.menuBtn:hover {
+  background-color: transparentize($color: #fff, $amount: 0.75);
+}
+.menuBtn {
+  margin: 8px;
+  padding: 5px 10px;
+  width: auto;
+  font-size: 16px;
+}
+
+.logo {
+  margin: 18vh 0 8vh 0;
+  font-family: $font-logo-type;
+  font-size: calc(35px + 2vw);
+  display: inline-block;
+  cursor: pointer;
+}
+
+footer {
+  margin: 40px 0 35px;
+
+  p {
+    margin: 0;
+    font-size: 27px;
+    position: relative;
+    top: 7px;
+  }
+
+  a,
+  a:active,
+  a:hover,
+  a:visited {
+    color: $font-main-color;
+
+    img {
+      height: 25px;
+      margin-right: 20px;
+    }
+  }
+}
+
+// ABOUT SECTION
+//---------------------
+
+#headshot {
+  width: 100%;
+  max-width: 264px;
+  border-radius: 5px;
+  margin-bottom: 27px;
+}
+
+.variable-justify {
+  justify-content: flex-start;
+}
+
+//---------------------
+
+// PROJECTS SECTION
+//---------------------
+
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: $font-main-color;
+  background-color: transparentize($color: #fff, $amount: 0.9);
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.project-img {
+  width: 100%;
+  margin: 10px 0 20px;
+  border-radius: 5px;
+}
+
+.tech-border {
+  display: block;
+  border: 1px solid $font-accent-color;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 8px 0 18px;
+}
+
+//---------------------
+
+// MEDIA QUERIES
+//---------------------
+
+@media only screen and (max-width: 1920px) {
+  body {
+    background-image: url("../images/darkTextureBG-1920.jpg");
+  }
+  #animatedBG {
+    background-image: url("../images/animatedBG-1920.png");
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url("../images/darkTextureBG-767.jpg");
+  }
+  #animatedBG {
+    background-image: url("../images/animatedBG-767.png");
+  }
+  .about-col {
+    text-align: center;
+    padding: 0 45px;
+  }
+  .variable-justify {
+    justify-content: center;
+  }
+  .about-details {
+    margin: 0 15px;
+  }
+  .project-desc {
+    margin-bottom: 60px;
+  }
+}
+
+//---------------------

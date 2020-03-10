@@ -3,116 +3,766 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Gina Lucy</title>
-    <!--Google Fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Comfortaa|Rock+Salt&display=swap"
-      rel="stylesheet"
-    />
     <!--Font Awesome Icons-->
     <script src="https://kit.fontawesome.com/51e99565ca.js"></script>
-    <!--Bootstrap-->
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- BOOTSTRAP -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <!--CSS-->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <!--jQuery-->
     <script
-      src="https://code.jquery.com/jquery-3.4.1.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <!--Animated background image-->
-    <div id="animatedBG"></div>
-    <div class="outer-container">
-      <!--Nav Hamburger Menu (Toggle Visibility)-->
-      <div id="hamburger">
-        <nav
-          class="navbar navbar-dark d-flex justify-content-end align-items-center flex-wrap"
-        >
-          <div id="hamburger-menu">
-            <div
-              class="d-flex justify-content-end align-items-center flex-wrap"
-            >
-              <button class="menuBtn" id="aboutTop">About</button>
-              <button class="menuBtn" id="projectsTop">Projects</button>
-              <button class="menuBtn" id="contactTop">Contact</button>
-            </div>
-          </div>
-          <!--Hamburger Icon-->
-          <button class="navbar-toggler" id="hamburgerBtn" type="button">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-      </div>
-      <!--Header-->
-      <header>
-        <div class="container">
-          <div class="row">
-            <div class="col text-center">
+    <!--Header-->
+    <header class="d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-white text-center">
+            <div class="text-md-left">
               <!--Logo-->
-              <h1 class="logo">Gina Lucy</h1>
+              <h1 class="mt-4 mb-4 logo">
+                Gina Lucy
+              </h1>
+              <!--Tagline-->
+              <h4>
+                Full Stack Web Developer &bull; Richmond, Virginia
+              </h4>
+              <!--Social links-->
+              <div class="d-inline-block mb-4">
+                <div
+                  class="iconStyle d-flex justify-content-start align-items-baseline"
+                >
+                  <a href="https://www.linkedin.com/in/grlucy" target="_blank">
+                    <img
+                      src="./assets/images/icons/linkedin-32.png"
+                      alt="LinkedIn Icon"
+                    />
+                  </a>
+                  <a href="https://github.com/grlucy" target="_blank">
+                    <img
+                      src="./assets/images/icons/GitHub-Mark-Light-32px.png"
+                      alt="Github Icon"
+                    />
+                  </a>
+                  <p>
+                    <a href="mailto:ginalucy9@gmail.com">
+                      <i class="far fa-envelope"></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </header>
-      <!--Landing Page Navigation-->
-      <section id="landing-nav">
+      </div>
+    </header>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark" id="stickyNav">
+      <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="./index.html">Gina Lucy</a>
+        <div>
+          <button class="navbar-toggler" type="button" id="hamburgerBtn">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="./assets/resume/GinaLucyResume.pdf"
+                  target="_blank"
+                  >Resume</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="main-content">
+      <!--About Section-->
+      <section>
+        <div id="about"></div>
         <div class="container">
           <div class="row">
-            <div class="col d-flex justify-content-center flex-wrap">
-              <!--Navigation-->
-              <button class="navBtn aboutLanding">About</button>
-              <button class="navBtn projectsLanding">Projects</button>
-              <button class="navBtn contactLanding">Contact</button>
+            <div class="col-md-3 text-center d-md-none">
+              <div class="text-md-left">
+                <img
+                  src="./assets/images/headshot/GINALUCY.jpg"
+                  class="headshot"
+                />
+              </div>
+            </div>
+            <div class="col-md-9 text-center text-md-left pr-md-5">
+              <h3 class="sectionTitle">
+                #about
+              </h3>
+              <p class="text-justify">
+                Full stack web developer located in Richmond, Virginia.
+              </p>
+              <p class="text-justify">
+                Certificate in Full Stack Web Development (MERN Stack) from the
+                University of Richmond. Passionate about learning to use new
+                technologies and new evolutions of existing technologies to
+                create efficient and scalable code. Interested in shaping the
+                future trends of how people interact with software.
+              </p>
+              <p class="text-justify">
+                Background in communications and graphic design with over 7
+                years of experience as a marketing specialist. B.S. Business
+                Administration with a major in marketing from Old Dominion
+                University. Skilled with the Adobe Creative Suite. Positioned
+                well to translate client needs into a cohesive online brand
+                identity.
+              </p>
+              <h4 class="text-justify">
+                Technical Skills:
+              </h4>
+              <p class="text-left">
+                <span class="font-weight-bold">Languages:</span> JavaScript,
+                HTML, CSS, SQL
+                <br />
+                <span class="font-weight-bold">JavaScript Libraries:</span>
+                jQuery, Chart.js, Moment.js
+                <br />
+                <span class="font-weight-bold"
+                  >CSS Extensions & Frameworks:</span
+                >
+                Sass, Bootstrap, Materialize
+                <br />
+                <span class="font-weight-bold">Databases:</span>
+                MongoDB, MySQL, IndexedDB
+                <br />
+                <span class="font-weight-bold">Server-Side Development:</span>
+                Node.js, Express, Handlebars, Mongoose, Sequelize, Passport.js
+                <br />
+                <span class="font-weight-bold">Deployment:</span>
+                Git, GitHub, Heroku, JawsDB
+                <br />
+              </p>
+              <div class="d-inline-block mt-3">
+                <div class="d-flex justify-content-center skillIcons">
+                  <i class="fab fa-js-square"></i>
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-node"></i>
+                  <i class="fab fa-bootstrap"></i>
+                  <i class="fab fa-git-square"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 text-center d-none d-md-block">
+              <div class="text-md-left">
+                <img
+                  src="./assets/images/headshot/GINALUCY.jpg"
+                  class="headshot"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!--Main Content-->
-      <section>
+
+      <!--Projects Section-->
+      <section class="darkSection">
+        <div id="projects"></div>
         <div class="container">
           <div class="row">
-            <div class="col" id="main-content-section">
-              <!--mainContent will be dynamically generated here-->
+            <div class="col-md-12 text-center text-md-left">
+              <h3 class="sectionTitle">
+                #projects
+              </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 text-center mt-4 mb-4">
+              <div class="projectLink">
+                <div
+                  class="card"
+                  data-toggle="modal"
+                  data-target="#friendangoModal"
+                >
+                  <img
+                    class="card-img-top staticGif"
+                    src="./assets/images/demos/Friendango-static.gif"
+                    alt="Friendango Demo"
+                  />
+                  <img
+                    class="card-img-top hoverGif"
+                    src="./assets/images/demos/Friendango-demo.gif"
+                    alt="Friendango Demo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Friendango
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 text-center mt-4 mb-4">
+              <div class="projectLink">
+                <div
+                  class="card"
+                  data-toggle="modal"
+                  data-target="#petspirationModal"
+                >
+                  <img
+                    class="card-img-top staticGif"
+                    src="./assets/images/demos/PetSpiration-static.gif"
+                    alt="PetSpiration Demo"
+                  />
+                  <img
+                    class="card-img-top hoverGif"
+                    src="./assets/images/demos/PetSpiration-demo.gif"
+                    alt="PetSpiration Demo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      PetSpiration
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 text-center mt-4 mb-4">
+              <div class="projectLink">
+                <div
+                  class="card"
+                  data-toggle="modal"
+                  data-target="#burgerModal"
+                >
+                  <img
+                    class="card-img-top staticGif"
+                    src="./assets/images/demos/Burger-Logger-static.gif"
+                    alt="Burger Logger Demo"
+                  />
+                  <img
+                    class="card-img-top hoverGif"
+                    src="./assets/images/demos/Burger-Logger-demo.gif"
+                    alt="Burger Logger Demo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Burger Logger
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 text-center mt-4 mb-4">
+              <div class="projectLink">
+                <div
+                  class="card"
+                  data-toggle="modal"
+                  data-target="#weatherModal"
+                >
+                  <img
+                    class="card-img-top staticGif"
+                    src="./assets/images/demos/Weather-Dashboard-static.gif"
+                    alt="Weather Dashboard Demo"
+                  />
+                  <img
+                    class="card-img-top hoverGif"
+                    src="./assets/images/demos/Weather-Dashboard-demo.gif"
+                    alt="Weather Dashboard Demo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Weather Dashboard
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 text-center mt-4 mb-4">
+              <div class="projectLink">
+                <div
+                  class="card"
+                  data-toggle="modal"
+                  data-target="#passwordModal"
+                >
+                  <img
+                    class="card-img-top staticGif"
+                    src="./assets/images/demos/Password-Generator-static.gif"
+                    alt="Password Generator Demo"
+                  />
+                  <img
+                    class="card-img-top hoverGif"
+                    src="./assets/images/demos/Password-Generator-demo.gif"
+                    alt="Password Generator Demo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Password Generator
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 text-center mt-4 mb-4">
+              <div class="projectLink">
+                <div class="card" data-toggle="modal" data-target="#quizModal">
+                  <img
+                    class="card-img-top staticGif"
+                    src="./assets/images/demos/Code-Quiz-static.gif"
+                    alt="Code Quiz Demo"
+                  />
+                  <img
+                    class="card-img-top hoverGif"
+                    src="./assets/images/demos/Code-Quiz-demo.gif"
+                    alt="Code Quiz Demo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Code Quiz
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Contact Section-->
+      <section>
+        <div id="contact"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center text-md-left">
+              <h3 class="sectionTitle">
+                #contact
+              </h3>
+              <form
+                class="mt-4 text-left"
+                action="https://formspree.io/mgeygzdq"
+                method="POST"
+              >
+                <div class="form-group">
+                  <label for="contactName">Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    id="contactName"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="_replyto"
+                    id="contactEmail"
+                    placeholder="Email"
+                  />
+                </div>
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Message from ginalucy.com"
+                />
+                <div class="form-group">
+                  <label for="contactMessage">Message:</label>
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    id="contactMessage"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button type="submit" class="contactBtn">Send</button>
+              </form>
             </div>
           </div>
         </div>
       </section>
     </div>
+
+    <!--Spacer Section-->
+    <section></section>
+
     <!--Footer-->
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col d-flex justify-content-center align-items-baseline">
-            <!--Social links-->
-            <a href="https://www.linkedin.com/in/grlucy" target="_blank">
-              <img src="./assets/images/linkedin-32.png" alt="LinkedIn Icon" />
-            </a>
-            <a href="https://github.com/grlucy" target="_blank">
-              <img
-                src="./assets/images/GitHub-Mark-Light-32px.png"
-                alt="Github Icon"
-              />
-            </a>
-            <p>
-              <a href="mailto:ginalucy9@gmail.com">
-                <i class="far fa-envelope"></i>
-              </a>
+          <div class="col-md-12 text-white text-center text-md-left">
+            <p
+              class="footerPara mb-0 d-flex align-items-center justify-content-center justify-content-md-start"
+            >
+              &copy; Gina Lucy 2020
+              <!-- Please ask permission before using this site's code for your own purposes. -->
             </p>
           </div>
         </div>
       </div>
     </footer>
+
+    <!--Modals-->
+    <div
+      class="modal fade"
+      id="friendangoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="friendangoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="friendangoModalLabel">Friendango</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-4 p-md-5 text-left">
+            <img
+              src="./assets/images/demos/Friendango-demo.gif"
+              class="mb-3 demoGif"
+            />
+            <div class="mb-3 buttonLink">
+              <a href="https://friendango.herokuapp.com/" target="_blank">
+                <button type="button" class="codeBtn">Demo</button>
+              </a>
+              <a href="https://github.com/grlucy/Friendango" target="_blank">
+                <button type="button" class="contactBtn">Code</button>
+              </a>
+            </div>
+            <p>
+              A social network for movie reviews that enables a user to submit
+              their own reviews and view data about the reviews submitted either
+              by all users or by only the users they follow.
+            </p>
+            <p class="font-weight-bold border-bottom">
+              Technologies used:
+            </p>
+            <p>
+              Node.js, Express, Handlebars, MySQL, Sequelize, JavaScript,
+              jQuery, Heroku, JawsDB, OMDB API, HTML, CSS, Bootstrap, Chart.js,
+              ESLint, Dotenv, Passport
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="petspirationModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="petspirationModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="petspirationModalLabel">
+              PetSpiration
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-4 p-md-5 text-left">
+            <img
+              src="./assets/images/demos/PetSpiration-demo.gif"
+              class="mb-3 demoGif"
+            />
+            <div class="mb-3 buttonLink">
+              <a href="https://grlucy.github.io/pet-spiration/" target="_blank">
+                <button type="button" class="codeBtn">Demo</button>
+              </a>
+              <a href="https://github.com/grlucy/pet-spiration" target="_blank">
+                <button type="button" class="contactBtn">Code</button>
+              </a>
+            </div>
+            <p>
+              A responsive application that helps users decide what type of pet
+              they want, matches users with available shelter animals, and then
+              provides directions to the animal shelter.
+            </p>
+            <p class="font-weight-bold border-bottom">
+              Technologies used:
+            </p>
+            <p>
+              HTML, CSS, Bootstrap, JavaScript, jQuery, Hammer.js, Petfinder
+              API, Google Maps API, GeolocationAPI
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="burgerModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="burgerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="burgerModalLabel">
+              Burger Logger
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-4 p-md-5 text-left">
+            <img
+              src="./assets/images/demos/Burger-Logger-demo.gif"
+              class="mb-3 demoGif"
+            />
+            <div class="mb-3 buttonLink">
+              <a
+                href="https://burger-logger-2020.herokuapp.com"
+                target="_blank"
+              >
+                <button type="button" class="codeBtn">Demo</button>
+              </a>
+              <a href="https://github.com/grlucy/Burger-Logger" target="_blank">
+                <button type="button" class="contactBtn">Code</button>
+              </a>
+            </div>
+            <p>
+              A responsive, RESTful Node.js/Express app using MySQL as a
+              database and Handlebars to serve HTML that enables users to read,
+              create, update, and delete data about burgers.
+            </p>
+            <p class="font-weight-bold border-bottom">
+              Technologies used:
+            </p>
+            <p>
+              MySQL, Node.js, Express, Handlebars, JavaScript, jQuery, CSS,
+              Bootstrap, HTML
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="weatherModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="weatherModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="weatherModalLabel">
+              Weather Dashboard
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-4 p-md-5 text-left">
+            <img
+              src="./assets/images/demos/Weather-Dashboard-demo.gif"
+              class="mb-3 demoGif"
+            />
+            <div class="mb-3 buttonLink">
+              <a
+                href="https://grlucy.github.io/Weather-Dashboard/"
+                target="_blank"
+              >
+                <button type="button" class="codeBtn">Demo</button>
+              </a>
+              <a
+                href="https://github.com/grlucy/Weather-Dashboard"
+                target="_blank"
+              >
+                <button type="button" class="contactBtn">Code</button>
+              </a>
+            </div>
+            <p>
+              A responsive weather dashboard that utilizes local storage,
+              geolocation, and the OpenWeather API.
+            </p>
+            <p class="font-weight-bold border-bottom">
+              Technologies used:
+            </p>
+            <p>
+              HTML, CSS, Bootstrap, JavaScript, jQuery, Moment.js, OpenWeather
+              API, Geolocation API
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="passwordModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="passwordModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="passwordModalLabel">
+              Password Generator
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-4 p-md-5 text-left">
+            <img
+              src="./assets/images/demos/Password-Generator-demo.gif"
+              class="mb-3 demoGif"
+            />
+            <div class="mb-3 buttonLink">
+              <a
+                href="https://grlucy.github.io/Password-Generator/"
+                target="_blank"
+              >
+                <button type="button" class="codeBtn">Demo</button>
+              </a>
+              <a
+                href="https://github.com/grlucy/Password-Generator"
+                target="_blank"
+              >
+                <button type="button" class="contactBtn">Code</button>
+              </a>
+            </div>
+            <p>
+              A responsive application that generates a random password based on
+              user-selected criteria.
+            </p>
+            <p class="font-weight-bold border-bottom">
+              Technologies used:
+            </p>
+            <p>
+              JavaScript, HTML, CSS, Bootstrap
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="quizModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="quizModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="quizModalLabel">
+              Code Quiz
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-4 p-md-5 text-left">
+            <img
+              src="./assets/images/demos/Code-Quiz-demo.gif"
+              class="mb-3 demoGif"
+            />
+            <div class="mb-3 buttonLink">
+              <a href="https://grlucy.github.io/Code-Quiz/" target="_blank">
+                <button type="button" class="codeBtn">Demo</button>
+              </a>
+              <a href="https://github.com/grlucy/Code-Quiz" target="_blank">
+                <button type="button" class="contactBtn">Code</button>
+              </a>
+            </div>
+            <p>
+              A responsive, timer-based quiz application that stores high scores
+              client-side.
+            </p>
+            <p class="font-weight-bold border-bottom">
+              Technologies used:
+            </p>
+            <p>
+              HTML, CSS, JavaScript
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--JavaScript-->
-    <script src="./assets/javascript/dynamic-html.js"></script>
-    <script src="./assets/javascript/click-init.js"></script>
+    <script type="text/javascript" src="./assets/javascript/sticky.js"></script>
   </body>
 </html>
