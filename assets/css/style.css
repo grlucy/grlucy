@@ -6,6 +6,12 @@ body {
   background-color: #eee;
 }
 
+.modal-open {
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-right: 0 !important;
+}
+
 header {
   background-color: #0c36aa;
   background-image: linear-gradient(45deg, #039cd5, #1545cb, #6c0cb4, #010520);
@@ -59,6 +65,10 @@ nav {
   padding-top: 56px;
 }
 
+#main-content {
+  min-height: calc(70vh - 186px);
+}
+
 #about,
 #projects,
 #contact {
@@ -103,12 +113,8 @@ section {
   opacity: 1;
 }
 
-.projectLink a,
-.projectLink a:active,
-.projectLink a:hover,
-.projectLink a:visited {
-  text-decoration: none;
-  color: #212529;
+.projectLink {
+  cursor: pointer;
 }
 
 .card-title {
@@ -147,7 +153,7 @@ section {
 }
 
 .contactBtn:hover {
-  background-color: #0a2e92;
+  background-color: #092a84;
 }
 
 footer {

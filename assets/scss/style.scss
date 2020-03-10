@@ -8,6 +8,11 @@ html {
 body {
   background-color: #eee;
 }
+.modal-open {
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-right: 0 !important;
+}
 header {
   background-color: $color-main-accent;
   background-image: $gradient;
@@ -52,6 +57,9 @@ nav {
 .sticky + #main-content {
   padding-top: 56px;
 }
+#main-content {
+  min-height: calc(70vh - 186px);
+}
 #about,
 #projects,
 #contact {
@@ -92,13 +100,7 @@ section {
   }
 }
 .projectLink {
-  a,
-  a:active,
-  a:hover,
-  a:visited {
-    text-decoration: none;
-    color: #212529;
-  }
+  cursor: pointer;
 }
 .card-title {
   margin-bottom: 0;
@@ -130,7 +132,7 @@ section {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .contactBtn:hover {
-  background-color: darken($color-main-accent, 5%);
+  background-color: darken($color-main-accent, 8%);
 }
 footer {
   background-color: $color-main-accent;
