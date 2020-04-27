@@ -221,6 +221,31 @@
                 <div
                   class="card"
                   data-toggle="modal"
+                  data-target="#ecommerceModal"
+                >
+                  <img
+                    class="card-img-top staticGif"
+                    src="./assets/images/demos/Ecommerce-static.gif"
+                    alt="Ecommerce Site Demo"
+                  />
+                  <img
+                    class="card-img-top hoverGif"
+                    src="./assets/images/demos/Ecommerce-demo.gif"
+                    alt="Ecommerce Site Demo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Dragon's Den Ecommerce
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 text-center mt-4 mb-4">
+              <div class="projectLink">
+                <div
+                  class="card"
+                  data-toggle="modal"
                   data-target="#friendangoModal"
                 >
                   <img
@@ -287,8 +312,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
             <div class="col-md-4 text-center mt-4 mb-4">
               <div class="projectLink">
                 <div
@@ -334,27 +357,6 @@
                   <div class="card-body">
                     <h5 class="card-title">
                       Weather Dashboard
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 text-center mt-4 mb-4">
-              <div class="projectLink">
-                <div class="card" data-toggle="modal" data-target="#quizModal">
-                  <img
-                    class="card-img-top staticGif"
-                    src="./assets/images/demos/Code-Quiz-static.gif"
-                    alt="Code Quiz Demo"
-                  />
-                  <img
-                    class="card-img-top hoverGif"
-                    src="./assets/images/demos/Code-Quiz-demo.gif"
-                    alt="Code Quiz Demo"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      Code Quiz
                     </h5>
                   </div>
                 </div>
@@ -745,17 +747,17 @@
 
     <div
       class="modal fade"
-      id="quizModal"
+      id="ecommerceModal"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="quizModalLabel"
+      aria-labelledby="ecommerceModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="quizModalLabel">
-              Code Quiz
+            <h5 class="modal-title" id="ecommerceModalLabel">
+              Dragon's Den Ecommerce
             </h5>
             <button
               type="button"
@@ -768,19 +770,19 @@
           </div>
           <div class="modal-body p-4 p-md-5 text-left">
             <img
-              src="./assets/images/demos/Code-Quiz-demo.gif"
+              src="./assets/images/demos/Ecommerce-demo.gif"
               class="mb-3 demoGif"
             />
             <div class="mb-3 buttonLink">
               <a
-                href="https://grlucy.github.io/Code-Quiz/"
+                href="https://dragons-den-store.herokuapp.com/"
                 target="_blank"
                 rel="noopener"
               >
                 <button type="button" class="codeBtn">Demo</button>
               </a>
               <a
-                href="https://github.com/grlucy/Code-Quiz"
+                href="https://github.com/grlucy/ecommerce-game-store"
                 target="_blank"
                 rel="noopener"
               >
@@ -788,14 +790,40 @@
               </a>
             </div>
             <p>
-              A responsive, timer-based quiz application that stores high scores
-              client-side.
+              A website for a local game store that enables online credit card &
+              PayPal transactions and curbside pickup scheduling, protecting
+              customers who are social distancing and helping a small retailer
+              stay in business during the quarantine. Includes: an ecommerce
+              store that can be searched, sorted, and filtered; a built-in
+              inventory management system; and secure user authentication for
+              customers and admins.
+            </p>
+            <p>
+              Use these credentials to test admin functionality on the demo
+              site:
+              <br />
+              <b>email:</b> admin@gmail.com
+              <br />
+              <b>password:</b> admin1
+            </p>
+            <p>
+              Use
+              <a
+                href="https://developers.braintreepayments.com/guides/credit-cards/testing-go-live/node"
+                target="_blank"
+                rel="noopener"
+              >
+                Braintree Sandbox's test credit cards
+              </a>
+              or a PayPal sandbox account to test ecommerce transactions on the
+              demo site.
             </p>
             <p class="font-weight-bold border-bottom">
               Technologies used:
             </p>
             <p>
-              HTML, CSS, JavaScript
+              React, MongoDB, Mongoose, Express, Node.js, Braintree, AWS S3,
+              JavaScript, CSS, Bulma, HTML, Formspree API
             </p>
           </div>
         </div>
