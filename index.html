@@ -229,6 +229,19 @@
           <div class="row">
             <div class="col-md-4 text-center mt-4 mb-4">
               <div class="projectLink">
+                <div class="card" data-toggle="modal" data-target="#bankModal">
+                  <img class="card-img-top staticGif" src="./assets/images/demos/Serverless-Bank-static.gif" alt="Serverless Bank Demo" />
+                  <img class="card-img-top hoverGif" src="./assets/images/demos/Serverless-Bank-demo.gif" alt="Serverless Bank Demo" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Serverless Bank
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 text-center mt-4 mb-4">
+              <div class="projectLink">
                 <div
                   class="card"
                   data-toggle="modal"
@@ -297,27 +310,6 @@
                   <div class="card-body">
                     <h5 class="card-title">
                       PetSpiration
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 text-center mt-4 mb-4">
-              <div class="projectLink">
-                <div class="card" data-toggle="modal" data-target="#bookModal">
-                  <img
-                    class="card-img-top staticGif"
-                    src="./assets/images/demos/Book-Search-static.png"
-                    alt="Book Search Demo"
-                  />
-                  <img
-                    class="card-img-top hoverGif"
-                    src="./assets/images/demos/Book-Search-demo.gif"
-                    alt="Book Search Demo"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      Book Search
                     </h5>
                   </div>
                 </div>
@@ -440,7 +432,7 @@
             <p
               class="footerPara mb-0 d-flex align-items-center justify-content-center justify-content-md-start"
             >
-              &copy; Gina Lucy 2020
+              &copy; Gina Lucy 2022
               <!-- Please ask permission before using this site's code for your own purposes. -->
             </p>
           </div>
@@ -572,17 +564,17 @@
 
     <div
       class="modal fade"
-      id="bookModal"
+      id="bankModal"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="bookModalLabel"
+      aria-labelledby="bankModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="bookModalLabel">
-              Book Search
+            <h5 class="modal-title" id="bankModalLabel">
+              Serverless Bank
             </h5>
             <button
               type="button"
@@ -595,19 +587,19 @@
           </div>
           <div class="modal-body p-4 p-md-5 text-left">
             <img
-              src="./assets/images/demos/Book-Search-demo.gif"
+              src="./assets/images/demos/Serverless-Bank-demo.gif"
               class="mb-3 demoGif"
             />
             <div class="mb-3 buttonLink">
               <a
-                href="http://books-searcher.herokuapp.com/"
+                href="https://grlucy.github.io/serverless-bank-api/"
                 target="_blank"
                 rel="noopener"
               >
                 <button type="button" class="codeBtn">Demo</button>
               </a>
               <a
-                href="https://github.com/grlucy/Book-Search"
+                href="https://github.com/grlucy/serverless-bank-api"
                 target="_blank"
                 rel="noopener"
               >
@@ -615,17 +607,21 @@
               </a>
             </div>
             <p>
-              A responsive, single-page MERN app that uses the Google Books API
-              to save and delete books selected by the user to a Mongo database.
-              The app uses socket.io to control save and delete notifications
-              that appear on any browser that is viewing the app.
+              A single-page Vue app that creates, reads, updates, and deletes 
+              bank accounts. Vue Router handles dynamic route matching. The API 
+              is deployed with the Serverless framework through AWS API Gateway 
+              and AWS Lambda. Data is stored in AWS DynamoDB. API endpoints are 
+              fully covered with integration tests, and a husky pre-push hook 
+              runs the full automated test collection every time a developer 
+              pushes code.
             </p>
             <p class="font-weight-bold border-bottom">
               Technologies used:
             </p>
             <p>
-              MongoDB, Mongoose, mLab, Express, React, Node.js, Socket.io,
-              JavaScript, HTML, CSS, Bulma
+              Serverless, serverless-offline plugin, AWS API Gateway, AWS 
+              Lambda, AWS DynamoDB, AWS IAM, Postman, Newman, Husky, Vue 3, 
+              Vue CLI, Vue Router
             </p>
           </div>
         </div>
